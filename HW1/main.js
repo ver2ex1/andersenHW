@@ -2,7 +2,7 @@ function numToScale () {
     try {
     var num = +prompt('Введите число')
     var scale = +prompt('Введите систему счисления')
-    console.log( typeof num.toString(scale))
+    console.log(num.toString(scale))
     }
     catch (error) {
         console.log('Некорректный ввод!')
