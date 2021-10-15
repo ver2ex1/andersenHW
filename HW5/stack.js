@@ -39,10 +39,10 @@ class Stack {
 
   toArray() {
     const arr = []
-    let currentNode = this.start
-    while (currentNode) {
-      arr.push(currentNode)
-      currentNode = currentNode.next
+    let curr = this.start
+    while (curr) {
+      arr.push(curr)
+      curr = curr.next
     }
     return arr
   }
@@ -59,7 +59,7 @@ class Stack {
     for (i of iterable) {
       stack.push(i)
     }
-    return s
+    return stack
   }
 }
 
