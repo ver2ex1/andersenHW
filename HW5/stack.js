@@ -7,7 +7,7 @@ class Node {
 
 class Stack {
   constructor(max = 10) {
-    if (!Number.isSafeInteger(max) || max < 1)
+    if (!Number.isInteger(max) || max < 1)
       throw new Error("Invalid number")
     this.start = null
     this.length = 0
